@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left: 4%;
+    margin-top: 15%;
+    padding: 5%;
+    background-color: aqua;
+}
+
