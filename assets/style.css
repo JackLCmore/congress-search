@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left: 4%;
+    margin-top: 15%;
+    padding: 5%;
+    background-color: aqua;
+}
+
+#select{
+    width: 50%;
+    margin-left: 1%;
+}
