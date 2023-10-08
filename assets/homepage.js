@@ -27,21 +27,20 @@ var getSearchResults = function (searchdata, options) {
     }
 
     console.log("The parameter is: " + apiUrl)
-    fetch(apiUrl, {
-        mode: "no-cors" ,
-        headers: {
-            'Access-Control-Allow-Origin':'*'
-        }
-    })
-    .then(function (response) {
-        if (response.ok) {
-            response.json().then(function(data){
-                console.log(data)
-            })
-        } else {
-            console.log("Must have failed or something")
-        }
-    })
+
+    fetch(apiUrl)
+        .then(function (response) {
+            if (!response.ok) {
+                response.json();
+            }
+
+            return response.json();
+        })
+
+        .then(function (doResponse) {
+            console.log(doResponse);
+
+        })
 }
 
 
